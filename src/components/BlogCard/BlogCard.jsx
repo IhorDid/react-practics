@@ -1,4 +1,4 @@
-import formatDay from '../../helper/formatDay';
+import { formatDay } from '../../helper/formatDay';
 import styles from './BlogCard.module.css';
 export const BlogCard = ({
   poster,
