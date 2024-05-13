@@ -1,7 +1,9 @@
-import { formatDistanceToNow } from 'date-fns';
+import { formatDistanceToNow, format } from 'date-fns';
 
-const formatDay = data => {
+export const formatDay = data => {
   return formatDistanceToNow(new Date(data), { addSuffix: false });
 };
 
-export default formatDay;
+export const formatDate = date => {
+  return format(new Date(date), 'dd/MM/yyyy, HH:mm');
+};
