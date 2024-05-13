@@ -14,9 +14,9 @@ export const CryptoHistory = ({ items }) => {
       </thead>
 
       <tbody>
-        {items.map(({ id, price, amount, date }) => (
+        {items.map(({ id, price, amount, date }, index) => (
           <tr key={id}>
-            <td className={style.td}>{id}</td>
+            <td className={style.td}>{index + 1}</td>
             <td className={style.td}>{price}</td>
             <td className={style.td}>{amount}</td>
             <td className={style.td}>{formatDate(date)}</td>
