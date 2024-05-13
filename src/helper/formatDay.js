@@ -5,5 +5,5 @@ export const formatDay = data => {
 };
 
 export const formatDate = date => {
-  return format(new Date(date), 'dd/MM/yyyy, HH:mm');
+  return format(new Date(date), 'dd/MM/yyyy, h:mm a');
 };
